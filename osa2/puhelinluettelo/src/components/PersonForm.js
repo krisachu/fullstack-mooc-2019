@@ -3,7 +3,7 @@ import React from 'react'
 const PersonForm = (props) => {
 
     return (
-        <form onSubmit={props.onSubmit}>
+        <form onSubmit={props.onSubmit} className="add-new-form">
             <div>
                 Name: <input value={props.nameValue}
                     onChange={props.onNameChange} />
@@ -12,7 +12,7 @@ const PersonForm = (props) => {
                 Number: <input value={props.numberValue} onChange={props.onNumberChange} />
             </div>
             <div>
-                <button type="submit">Add</button>
+                <button type="submit" className="add-button">Add</button>
             </div>
         </form>
     )
